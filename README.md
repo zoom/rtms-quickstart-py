@@ -54,68 +54,9 @@ Here's how you can implement the SDK yourself.
 import rtms
 ```
 
-### Two Usage Patterns
+### 🏢 Client-Based Approach
 
-The SDK supports two approaches for connecting to meetings:
-
-#### 1. 🏢 Client-Based Approach (Multiple Meetings)
-
-Use this for handling multiple concurrent meetings:
-
-```python
-# Create clients for each meeting
-client = rtms.Client()
-
-# Set up callbacks using decorators
-@client.onAudioData
-def on_audio(buffer, size, timestamp, metadata):
-    print(f"🎵 Audio from {metadata.userName}: {size} bytes")
-
-@client.onVideoData
-def on_video(buffer, size, timestamp, metadata):
-    print(f"📹 Video from {metadata.userName}: {size} bytes")
-
-@client.onTranscriptData
-def on_transcript(buffer, size, timestamp, metadata):
-    text = buffer.decode('utf-8')
-    print(f"💬 {metadata.userName}: {text}")
-
-# Join the meeting
-client.join(
-    meeting_uuid="meeting-uuid",
-    rtms_stream_id="stream-id",
-    server_urls="wss://rtms.zoom.us"
-)
-```
-
-#### 2. 🌐 Global Singleton Approach (Single Meeting)
-
-Use this for simple single-meeting applications:
-
-```python
-client = rtms.Client()
-
-# Set up global callbacks
-@client.onAudioData
-def on_audio(buffer, size, timestamp, metadata):
-    print(f"🎵 Audio from {metadata.userName}: {size} bytes")
-
-@client.onTranscriptData
-def on_transcript(buffer, size, timestamp, metadata):
-    text = buffer.decode('utf-8')
-    print(f"💬 {metadata.userName}: {text}")
-
-# Join the meeting
-client.join(
-    meeting_uuid="meeting-uuid",
-    rtms_stream_id="stream-id",
-    server_urls="wss://rtms.zoom.us"
-)
-```
-
-## 🪝 Webhook Integration
-
-Set up webhook handling to automatically connect when meetings start:
+Create a client for each meeting to handle multiple concurrent meetings:
 
 ```python
 import rtms
