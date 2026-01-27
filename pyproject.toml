@@ -1,0 +1,19 @@
+[project]
+name = "rtms-quickstart"
+version = "1.0.0"
+description = "Get started with RTMS using Python"
+authors = [
+    { name = "Zoom Communications, Inc." }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "rtms>=1.0.0",
+    "python-dotenv>=1.2.1",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

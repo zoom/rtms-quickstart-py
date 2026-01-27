@@ -1,0 +1,42 @@
+version = 1
+revision = 3
+requires-python = ">=3.10"
+
+[[package]]
+name = "python-dotenv"
+version = "1.2.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f0/26/19cadc79a718c5edbec86fd4919a6b6d3f681039a2f6d66d14be94e75fb9/python_dotenv-1.2.1.tar.gz", hash = "sha256:42667e897e16ab0d66954af0e60a9caa94f0fd4ecf3aaf6d2d260eec1aa36ad6", size = 44221, upload-time = "2025-10-26T15:12:10.434Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/14/1b/a298b06749107c305e1fe0f814c6c74aea7b2f1e10989cb30f544a1b3253/python_dotenv-1.2.1-py3-none-any.whl", hash = "sha256:b81ee9561e9ca4004139c6cbba3a238c32b03e4894671e181b671e8cb8425d61", size = 21230, upload-time = "2025-10-26T15:12:09.109Z" },
+]
+
+[[package]]
+name = "rtms"
+version = "1.0.0"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/98/6d/72d73b43180a5c77caae89a233ecf7db46f10e27651d722b83a9760dd737/rtms-1.0.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:4bd0764a8668f3f039c4c7e7d27775cdf7fdf5ddcda6f21f4d8a7a21530405ed", size = 8267403, upload-time = "2026-01-27T06:58:54.547Z" },
+    { url = "https://files.pythonhosted.org/packages/e6/42/312851753025774954b32ec6c65d3759cd7b4a099161d99fbb268208461b/rtms-1.0.0-cp310-cp310-manylinux_2_34_x86_64.whl", hash = "sha256:b5c39acc961f4d75f33ee9d6bc1716042f238278e1fe7d96ef9e2ef6573ef0e1", size = 5349083, upload-time = "2026-01-27T06:58:56.962Z" },
+    { url = "https://files.pythonhosted.org/packages/b4/1c/4885c8d3173f189f6f870dc9a24c74118612769834753002d0d771931172/rtms-1.0.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:4334d98994b00909da06c160b127b7edafb5885cf2e32d99f84b3b37278f1414", size = 8268602, upload-time = "2026-01-27T06:58:59.001Z" },
+    { url = "https://files.pythonhosted.org/packages/3b/d8/943f8e04ff2bf4aa421ea339e379f98255baaa3a710580042354aec1bb50/rtms-1.0.0-cp311-cp311-manylinux_2_34_x86_64.whl", hash = "sha256:a193644cff3975522663c85a22902a3c6375a81d9ae948147f7728b94c7377a4", size = 5350172, upload-time = "2026-01-27T06:59:00.718Z" },
+    { url = "https://files.pythonhosted.org/packages/af/8f/b49bd10f3118d5773e7e20e44fdb3334c3ead9c3484ad9b9adae38b2fdcf/rtms-1.0.0-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:3ba398851ea511201c8aac3b26c0d24bf45a7625e2f6f1a7fe679ea64a4fa8f3", size = 8269355, upload-time = "2026-01-27T06:59:03.359Z" },
+    { url = "https://files.pythonhosted.org/packages/9a/a6/438efb581171ad1dba051652ffb0757dd286fab72521517eb92b011a5fdc/rtms-1.0.0-cp312-cp312-manylinux_2_34_x86_64.whl", hash = "sha256:683edfb730eb2cfe00e38b5e7b1cccfd7405a810c445f23716c3b4f08aabdca2", size = 5351692, upload-time = "2026-01-27T06:59:05.691Z" },
+    { url = "https://files.pythonhosted.org/packages/2a/9e/b844ded23e997d8ef911f282153f2eff786c68883701f378e05d3ea8f56a/rtms-1.0.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:6c015ab01ed512c6f487bab56232da3e70441867f100cfbe5e722fa1dc14daf4", size = 8269390, upload-time = "2026-01-27T06:59:08.228Z" },
+    { url = "https://files.pythonhosted.org/packages/89/ec/3b2af8b2beca5bd554177b2b5a593e4fedee6b2a1ef0980df5162ebf404d/rtms-1.0.0-cp313-cp313-manylinux_2_34_x86_64.whl", hash = "sha256:01f8f1c5dad9c2d59242a9ba61204b17aec17b217892401a72c5f899b611f81a", size = 5351787, upload-time = "2026-01-27T06:59:10.547Z" },
+]
+
+[[package]]
+name = "rtms-quickstart"
+version = "1.0.0"
+source = { editable = "." }
+dependencies = [
+    { name = "python-dotenv" },
+    { name = "rtms" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "python-dotenv", specifier = ">=1.2.1" },
+    { name = "rtms", specifier = ">=1.0.0" },
+]
