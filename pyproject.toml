@@ -1,6 +1,6 @@
 [project]
 name = "rtms-quickstart"
-version = "1.0.1"
+version = "1.0.2"
 description = "Get started with RTMS using Python"
 authors = [
     { name = "Zoom Communications, Inc." }
@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 
 dependencies = [
-    "rtms>=1.0.0",
+    "rtms>=1.0.2",
     "python-dotenv>=1.2.1",
 ]
 
