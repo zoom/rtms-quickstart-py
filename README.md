@@ -3,7 +3,7 @@
 This simple app demonstrates integration with the [Zoom Realtime Media Streams SDK](https://pypi.org/project/rtms/) for Python.
 
 [![PyPI](https://img.shields.io/pypi/v/rtms)](https://pypi.org/project/rtms/)
-[![docs](https://img.shields.io/badge/docs-online-blue)](https://zoom.github.io/rtms/python/)
+[![docs](https://img.shields.io/badge/docs-online-blue)](https://zoom.github.io/rtms/py/)
 
 ## ⚙️ Configuration
 
