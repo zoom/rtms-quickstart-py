@@ -151,7 +151,7 @@ client.setDeskshareParams(params)
 
 For complete parameter options and detailed documentation:
 
-- 🎵 **[Audio Parameters](https://zoom.github.io/rtms/python/)** - Complete audio configuration options
-- 📹 **[Video Parameters](https://zoom.github.io/rtms/python/)** - Complete video configuration options
-- 🖥️ **[Deskshare Parameters](https://zoom.github.io/rtms/python/)** - Complete deskshare configuration options
+- 🎵 **[Audio Parameters](https://zoom.github.io/rtms/py/)** - Complete audio configuration options
+- 📹 **[Video Parameters](https://zoom.github.io/rtms/py/)** - Complete video configuration options
+- 🖥️ **[Deskshare Parameters](https://zoom.github.io/rtms/py/)** - Complete deskshare configuration options
 - 📖 **[Full API Documentation](https://zoom.github.io/rtms/py/)** - Complete SDK reference
